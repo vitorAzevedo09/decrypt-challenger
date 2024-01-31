@@ -1,0 +1,123 @@
+:root {
+  --dark-blue-100: #609ED4;
+  --dark-blue-200: #356EA9;
+  --dark-blue-300: #0A3871;
+  --dark-blue-400: #072B61;
+  --dark-blue-500: #052051;
+  --light-blue-100: #F3F5FC;
+  --light-blue-200: #EFF1FA;
+  --light-blue-300: #E9ECF8;
+  --light-blue-400: #AAB2D5;
+  --light-blue-500: #757FB2;
+  --gray-100: #CED4DA;
+  --gray-200: #ADB5BD;
+  --gray-300: #868E96;
+  --gray-400: #495057;
+  --gray-500: #343A40;
+}
+
+body {
+  background-color: var(--light-blue-200);
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+.input-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box textarea {
+  width: 80%;
+  height: 80%;
+  resize: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: var(--light-blue-200);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: var(--gray-400);
+  font-family: 'Inter', sans-serif;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#btn-encrypt {
+  background-color: var(--dark-blue-300);
+  color: var(--light-blue-100);
+}
+
+#btn-encrypt:hover {
+  background-color: var(--dark-blue-200);
+  color: var(--light-blue-100);
+}
+
+#btn-decrypt {
+  background-color: var(--light-blue-400);
+  color: var(--dark-blue-500);
+}
+
+#btn-decrypt:hover {
+  background-color: var(--dark-blue-200);
+  color: var(--light-blue-100);
+}
+
+#btn-box {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.output-box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#output-text{
+  width: 80%;
+  height: 80%;
+  resize: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: var(--light-blue-200);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: var(--gray-400);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  overflow: auto;
+  
+}

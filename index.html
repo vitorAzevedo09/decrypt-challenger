@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <script script src="js/index.js"></script>
-  </head>
-  <body>
-    <h1>Challenger</h1>
-  </body>
+
+<head>
+  <title>Decriptar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <script script src="js/index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <img src="img/logo-alura.svg" alt="logo">
+  </header>
+  <main>
+    <div class="input-box">
+      <textarea id="input-text" placeholder="Digite seu texto"></textarea>
+      <p class="info-box">
+        <img src="img/bi_exclamation-circle-fill.svg" alt="ícone de informação">
+        <span>Apenas letras minúsculas e sem acento.</span>
+      </p>
+      <div class="btn-box">
+        <button id="btn-encrypt" onclick="encrypt()">Criptografar</button>
+        <button id="btn-decrypt" onclick="decrypt()">Descriptografar</button>
+      </div>
+    </div>
+    <div class="output-box">
+      <textarea id="output-text" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
+    </div>
+  </main>
+  <footer>
+    <p>© 2024 Alura. Todos os direitos reservados. Desenvolvido por Vitor Azevedo Silva</p>
+  </footer>
+</body>
+
 </html>
