@@ -26,6 +26,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   min-height: 80vh;
+  padding: 2rem;
 }
 
 .input-box {
@@ -40,14 +41,19 @@ main {
   width: 80%;
   height: 80%;
   resize: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
   background-color: var(--light-blue-200);
   border: none;
   outline: none;
   border-radius: 0.5rem;
-  color: var(--gray-400);
+  color: var(--dark-blue-300);
   font-family: 'Inter', sans-serif;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 3rem */
 }
 
 .info-box {
@@ -65,8 +71,20 @@ button {
   cursor: pointer;
   border-radius: 0.5rem;
   font-size: 1rem;
-  font-weight: bold;
+  padding: 1rem;
+  padding-inline: 6rem;
+  font-family: 'Inter', sans-serif;
+  margin: 1rem;
   transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#btn-copy {
+  background-color: var(--light-blue-400);
+  color: var(--dark-blue-500);
 }
 
 #btn-encrypt {
@@ -97,27 +115,88 @@ button {
   justify-content: center;
 }
 
-.output-box {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#output-text{
+.output-box textarea {
   width: 80%;
   height: 80%;
   resize: none;
   font-size: 1.5rem;
   padding: 1rem;
-  background-color: var(--light-blue-200);
   border: none;
   outline: none;
   border-radius: 0.5rem;
-  color: var(--gray-400);
-  font-family: 'Inter', sans-serif;
-  text-align: center;
-  overflow: auto;
-  
+  color: var(--Gray-gray-400, #495057);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.25rem */
 }
+
+.output-box {
+  border-radius: 0.8rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.output-box img {
+  width: 80%;
+}
+
+.output-box h3 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--gray-400);
+}
+
+.output-box p {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--gray-400);
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .input-box {
+    width: 100%;
+  }
+  .output-box {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .input-box textarea {
+    height: 40vh;
+  }
+  
+  .output-text  {
+    display: none;
+  }
+
+  .output-box img {
+    display: none;
+  }
+
+  .output-box textarea{
+    height: 60vh;^
+  }
+
+}
+
+@media (max-width: 480px) {
+  .input-box textarea {
+    font-size: 1.2rem;
+  }
+  .output-box textarea {
+    font-size: 1.2rem;
+  }
+}
+
+

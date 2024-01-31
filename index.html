@@ -26,7 +26,12 @@
       </div>
     </div>
     <div class="output-box">
-      <textarea id="output-text" placeholder="Nenhuma mensagem encontrada" readonly></textarea>
+        <img id="output-img" src="img/curious-diamond.svg" >
+      <h3 id="output-title" >Nenhuma mensagem encontrada</h3>
+      <p id="output-info">Digite um texto que deseja criptografar ou descriptografar.</p>
+      <textarea id="output-text" class="output-text"  readonly>
+      </textarea>
+      <button id="btn-copy" onclick="copy()">Copiar</button>
     </div>
   </main>
   <footer>
